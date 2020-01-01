@@ -1,0 +1,8 @@
+FROM python:3-slim as build
+
+ENV PIPENV_VERSION "2018.11.26"
+WORKDIR /app
+RUN pip install --upgrade pip==${PIPENV_VERSION}
+RUN pip install pipenv
+
+ENTRYPOINT ["pipenv"]
