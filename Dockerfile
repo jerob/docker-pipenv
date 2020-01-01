@@ -1,4 +1,4 @@
-FROM python:3-alpine as build
+FROM python:3.7-alpine as build
 
 WORKDIR /app
 RUN pip install --upgrade pip
